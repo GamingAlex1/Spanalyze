@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Load navbar from components folder
-    fetch('components/navbar.html')
-        .then(response => response.text())
+    fetch('data/glossary.json')
+        .then(response => response.json())
         .then(data => {
-            document.getElementById('navbar').innerHTML = data;
+            const glossaryContainer = document.getElementById('glossary');
+            data.forEach(entry => {
+                const termElement = document.createElement('div');
+                termElement.className = 'glossary-term';
+                termElement.textContent = `${entry.term}: ${entry.definition}`;
+                glossaryContainer.appendChild(termElement);
+            });
         })
-        .catch(error => console.error('Error loading navbar:', error));
+        .catch(error => console.error('Error loading glossary:', error));
 });
