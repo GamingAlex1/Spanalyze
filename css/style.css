@@ -6,16 +6,20 @@ body, h2 {
     padding: 0;
 }
 
+h1 {
+    color: white;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #3A3E41;
     color: #333;
     padding: 20px;
 }
 
 /* Navbar Styling */
 nav {
-    background-color: #333;
+    background-color: #323637;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -38,20 +42,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #7d5b5b;
 }
 
 /* Glossary Content Styling */
 #glossary-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust the minmax to control the width */
     gap: 20px;
+    max-width: 100%; /* Ensure the grid does not overflow the container */
+    justify-content: center; /* Center the grid items if there is extra space */
 }
 
 /* Individual category box */
 .category {
-    background-color: white;
+    background-color: #222425;
     padding: 15px;
+    color: #efefef;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -59,7 +66,7 @@ nav ul li a:hover {
 .category h2 {
     margin-bottom: 15px;
     font-size: 1.2em;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #8E8476;
     padding-bottom: 5px;
 }
 
@@ -74,6 +81,6 @@ nav ul li a:hover {
 }
 
 .definition {
-    color: #666;
+    color: #C6BDB0;
     font-style: italic;
 }
