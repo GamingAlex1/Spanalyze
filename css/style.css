@@ -86,6 +86,8 @@ body {
     border: 2px solid #ddd; /* Border around the category box */
     background-color: #f9f9f9; /* Background color for the category box */
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .category h2 {
@@ -96,8 +98,6 @@ body {
     border-bottom: 2px solid #ddd; /* Divider line under the title */
     text-align: center; /* Center the title text */
     margin: 0; /* Remove default margin to prevent overflow issues */
-    display: flex;
-    flex-direction: column;
 }
 
 /* Flexbox styling for entries */
