@@ -86,7 +86,6 @@ body {
     border: 2px solid #ddd; /* Border around the category box */
     background-color: #f9f9f9; /* Background color for the category box */
     position: relative;
-    padding: 0;
 }
 
 .category h2 {
@@ -102,14 +101,14 @@ body {
 /* Flexbox styling for entries */
 .entry {
     display: flex;
-    padding: 10px;
+    padding: 5px; /* Reduced padding to bring entries closer together */
     align-items: center;
 }
 
 /* Remove the individual lines between entries */
 .entry .word, .entry .definition {
     width: 50%; /* Adjust the width to ensure alignment */
-    padding: 10px;
+    padding: 5px; /* Reduced padding to bring entries closer together */
 }
 
 .entry .word {
@@ -122,13 +121,8 @@ body {
     text-align: left; /* Align the text to the left */
 }
 
-/* Add a static middle line effect */
-.category-content {
-    display: flex;
-    position: relative;
-}
-
-.category-content:before {
+/* Static middle line effect */
+.category:before {
     content: "";
     position: absolute;
     top: 0;
@@ -139,13 +133,4 @@ body {
     transform: translateX(-50%); /* Center the line */
     z-index: 0; /* Ensure the line is behind the content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking */
-}
-
-.entry {
-    display: flex;
-    position: relative;
-}
-
-.entry .word {
-    border-right: none; /* Remove right border if using the middle line */
 }
