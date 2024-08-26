@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const notebooksContainer = document.getElementById('notebooks');
             const contentContainer = document.getElementById('glossary-content');
 
-            data.notebooks.forEach((notebook, index) => {
+            data.notebooks.forEach((notebook) => {
                 const button = document.createElement('button');
                 button.textContent = notebook.name;
                 button.addEventListener('click', () => loadNotebook(notebook));
