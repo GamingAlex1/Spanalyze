@@ -81,9 +81,12 @@ body {
 }
 
 .category {
-    /* ... other properties ... */
-    overflow: hidden; /* Ensure content doesn't overflow */
-  }
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ddd; /* Border around the category box */
+    background-color: #f9f9f9; /* Background color for the category box */
+    position: relative;
+}
 
 .category h2 {
     background-color: #fff;
