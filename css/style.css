@@ -99,29 +99,41 @@ body {
 .entry {
     display: flex;
     padding: 10px;
-    border-top: 1px solid #ddd; /* Divider line between entries */
+    border-bottom: 1px solid #ddd; /* Divider line between entries */
     align-items: center;
 }
 
 .entry:last-child {
-    border-bottom: 1px solid #ddd; /* Divider line at the bottom of the last entry */
+    border-bottom: none; /* Remove the border-bottom from the last entry */
+}
+
+.entry .word, .entry .definition {
+    width: 50%; /* Adjust the width to ensure alignment */
+    padding: 10px;
 }
 
 .entry .word {
     font-weight: bold;
-    width: 50%; /* Adjust the width to ensure alignment */
-    padding-right: 10px;
     text-align: right; /* Align the text to the right */
     border-right: 2px solid #ddd; /* Divider line between word and definition */
 }
 
 .entry .definition {
-    width: 50%; /* Adjust the width to ensure alignment */
-    padding-left: 10px;
     text-align: left; /* Align the text to the left */
 }
 
-/* Optional: Add some spacing for readability */
-.entry + .entry {
-    margin-top: 10px;
+/* Add a static middle line effect */
+.category {
+    position: relative;
+}
+
+.category:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd; /* Color of the middle line */
+    transform: translateX(-50%); /* Center the line */
 }
