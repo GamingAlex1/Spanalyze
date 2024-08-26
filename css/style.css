@@ -86,8 +86,11 @@ body {
     border: 2px solid #ddd; /* Border around the category box */
     background-color: #f9f9f9; /* Background color for the category box */
     position: relative;
+    padding: 10px;
+    /* Remove any unwanted vertical lines here */
 }
 
+/* Category title styling */
 .category h2 {
     background-color: #fff;
     color: #333;
@@ -103,9 +106,10 @@ body {
     display: flex;
     padding: 5px; /* Reduced padding to bring entries closer together */
     align-items: center;
+    /* Remove individual lines between entries */
 }
 
-/* Remove the individual lines between entries */
+/* Entry word and definition styling */
 .entry .word, .entry .definition {
     width: 50%; /* Adjust the width to ensure alignment */
     padding: 5px; /* Reduced padding to bring entries closer together */
@@ -114,7 +118,7 @@ body {
 .entry .word {
     font-weight: bold;
     text-align: right; /* Align the text to the right */
-    border-right: 2px solid #ddd; /* Divider line between word and definition */
+    border-right: 2px dashed #ddd; /* Dashed line between word and definition */
 }
 
 .entry .definition {
@@ -122,14 +126,14 @@ body {
 }
 
 /* Static middle line effect */
-.category:before {
+.category::before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
     width: 2px;
     height: 100%;
-    background-color: #ddd; /* Color of the middle line */
+    background: #ddd; /* Color of the middle line */
     transform: translateX(-50%); /* Center the line */
     z-index: 0; /* Ensure the line is behind the content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking */
