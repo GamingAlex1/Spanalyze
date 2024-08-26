@@ -1,0 +1,2 @@
+# Spanalyze
+spanish or vanish
