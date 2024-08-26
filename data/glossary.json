@@ -4,44 +4,108 @@
             "name": "Notebook 1",
             "categories": {
                 "Saludos": [
-                    {"word": "Hola", "definition": "Hello"},
-                    {"word": "Buenos días", "definition": "Good morning"}
+                    {"word": "Hola.", "definition": "Hello; Hi."},
+                    {"word": "Buenos días.", "definition": "Good morning."},
+                    {"word": "Buenas tardes.", "definition": "Good afternoon."},
+                    {"word": "Buenos noches.", "definition": "Good evening; Good night."}
                 ],
                 "Títulos": [
-                    {"word": "Señor", "definition": "Mr."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."}
+                    {"word": "Señor (Sr.); don", "definition": "Mr.; sir"},
+                    {"word": "Señora (Sra.); doña", "definition": "Mrs.; ma'am"},
+                    {"word": "Señorita (Srta.)", "definition": "Miss"}
                 ],
-                "Títuloss": [
-                    {"word": "Señor", "definition": "Mr."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."}
+                "Despedidas": [
+                    {"word": "Adiós.", "definition": "Goodbye."},
+                    {"word": "Nos vemos.", "definition": "See you."},
+                    {"word": "Hasta luego.", "definition": "See you later."},
+                    {"word": "Hasta la vista.", "definition": "See you later."},
+                    {"word": "Hasta pronto.", "definition": "See you soon."},
+                    {"word": "Hasta mañana.", "definition": "See you tomorrow."},
+                    {"word": "Saludos a...", "definition": "Greetings to..."},
+                    {"word": "Chau.", "definition": "Bye."}
                 ],
-                "Títulosss": [
-                    {"word": "Señor", "definition": "Mr."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."}
+                "¿Cómo está?": [
+                    {"word": "¿Cómo está usted?", "definition": "How are you?(form.)"},
+                    {"word": "¿Cómo estás?", "definition": "How are you?(fam.)"},
+                    {"word": "¿Qué hay de nuevo?", "definition": "What's new?"},
+                    {"word": "¿Qué pasa?", "definition": "What's happening?; What's going on?"},
+                    {"word": "¿Qué tal?", "definition": "How are you?; How is it going?"},
+                    {"word": "(Muy) bien, gracias.", "definition": "(Very) well, thanks."},
+                    {"word": "Nada.", "definition": "Nothing."},
+                    {"word": "No muy bien.", "definition": "Not very well."},
+                    {"word": "Regular.", "definition": "So-so; OK."}
                 ],
-                "Títulossss": [
-                    {"word": "Señor", "definition": "Mr."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."}
+                "Expresiones de cortesía": [
+                    {"word": "Con permiso.", "definition": "Pardon me; Excuse me."},
+                    {"word": "De nada.", "definition": "You're welcome."},
+                    {"word": "Lo siento.", "definition": "I'm sorry."},
+                    {"word": "(Muchas) gracias.", "definition": "Thank you (very much); Thanks (a lot)."},
+                    {"word": "No hay de qué.", "definition": "You're welcome."},
+                    {"word": "Perdón", "definition": "Pardon me; Excuse me."},
+                    {"word": "Por favor", "definition": "Please."}
                 ],
-                "Títulosssss": [
-                    {"word": "Señor", "definition": "Mr."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."}
+                "Presentaciones": [
+                    {"word": "¿Cómo se llama usted?", "definition": "What's your name? (form.)"},
+                    {"word": "¿Cómo te llamas?", "definition": "What's your name? (fam.)"},
+                    {"word": "Me llamo...", "definition": "My name is..."},
+                    {"word": "¿Y usted?", "definition": "And you? (form.)"},
+                    {"word": "¿Y tú?", "definition": "And you? (fam.)"},
+                    {"word": "Mucho gusto.", "definition": "Pleased to meet you."},
+                    {"word": "El gusto es mío.", "definition": "The pleasure is mine."},
+                    {"word": "Encantado/a.", "definition": "Delighted; Pleased to meet you."},
+                    {"word": "Igualmente.", "definition": "Likewise."},
+                    {"word": "Le presento a...", "definition": "I would like to introduce you to (name). (form.)"},
+                    {"word": "Te presento a...", "definition": "I would like to introduce you to (name). (fam.)"},
+                    {"word": "El nombre", "definition": "Name."}
                 ],
-                "Títulossssss": [
-                    {"word": "Señor", "definition": "Mr."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."},
-                    {"word": "Señora", "definition": "Mrs."}
+                "¿De dónde es?": [
+                    {"word": "¿De dónde es usted?", "definition": "Where are you from? (form.)"},
+                    {"word": "¿De dónde eres?", "definition": "Where are you from? (fam.)"},
+                    {"word": "Soy de...", "definition": "I'm from..."}
+                ],
+                "Palabras adicionales": [
+                    {"word": "¿Cuánto(s)/a(s)?", "definition": "How much/many?"},
+                    {"word": "¿De quién...?", "definition": "Whose...?(sing.)"},
+                    {"word": "¿De quiénes...?", "definition": "Whose...?(plural.)"},
+                    {"word": "(No) hay", "definition": "There is (not); there are (not)"}
+                ],
+                "Sustantivos": [
+                    {"word": "El autobús", "definition": "Bus."},
+                    {"word": "El chico", "definition": "Boy."},
+                    {"word": "La chica", "definition": "Girl."},
+                    {"word": "La computadora", "definition": "Computer."},
+                    {"word": "La comunidad", "definition": "Community."},
+                    {"word": "El/La conductor(a)", "definition": "Driver."},
+                    {"word": "La conversación", "definition": "Conversation."},
+                    {"word": "La cosa", "definition": "Thing."},
+                    {"word": "El día", "definition": "Day."},
+                    {"word": "El cuaderno", "definition": "Notebook."},
+                    {"word": "El diario", "definition": "Diary."},
+                    {"word": "El diccionario", "definition": "Dictionary."},
+                    {"word": "La escuela", "definition": "School."},
+                    {"word": "El/La estudiante", "definition": "Student."},
+                    {"word": "La foto(grafía)", "definition": "Photograph."},
+                    {"word": "El hombre", "definition": "Man."},
+                    {"word": "El/La joven", "definition": "Young person."},
+                    {"word": "El lápiz", "definition": "Pencil."},
+                    {"word": "La lección", "definition": "Lesson."},
+                    {"word": "La maleta", "definition": "Suitcase."},
+                    {"word": "La mano", "definition": "Hand."},
+                    {"word": "El mapa", "definition": "Map."},
+                    {"word": "La mujer", "definition": "Woman."},
+                    {"word": "La nacionalidad", "definition": "Nationality."},
+                    {"word": "El número", "definition": "Number."},
+                    {"word": "El país", "definition": "Country."},
+                    {"word": "La palabra", "definition": "Word."},
+                    {"word": "El/La pasajero/a", "definition": "Passenger."},
+                    {"word": "El problema", "definition": "Problem."},
+                    {"word": "El/La profesor(a)", "definition": "Teacher."},
+                    {"word": "El programa", "definition": "Program."},
+                    {"word": "El/La turista", "definition": "Tourist."},
+                    {"word": "El video", "definition": "Video."}
+                ],
+                "Verbo": [
+                    {"word": "Ser", "definition": "To be."}
                 ]
                 
             }
