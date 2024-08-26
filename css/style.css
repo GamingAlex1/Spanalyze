@@ -101,22 +101,23 @@ body {
 /* Flexbox styling for entries */
 .entry {
     display: flex;
-    flex-direction: column; /* Change to column layout */
-    padding: 5px;
+    padding: 5px; /* Reduced padding to bring entries closer together */
     align-items: center;
-  }
+}
 
 /* Remove the individual lines between entries */
 .entry .word, .entry .definition {
-    width: 100%; /* Ensure the entire width is used for each entry */
-    padding: 5px;
+    width: 50%; /* Adjust the width to ensure alignment */
+    padding: 5px; /* Reduced padding to bring entries closer together */
 }
-  .entry .word {
+
+.entry .word {
     font-weight: bold;
-    text-align: right;
-    border-bottom: 1px solid #ddd; /* Add a bottom border to separate entries */
-  }
+    text-align: right; /* Align the text to the right */
+    border-right: 2px solid #ddd; /* Divider line between word and definition */
+}
 
 .entry .definition {
     text-align: left; /* Align the text to the left */
 }
+
