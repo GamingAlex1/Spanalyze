@@ -1,127 +1,88 @@
-/* General reset for margins and paddings */
+/* Resetting basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navbar styling */
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    color: #fff;
-    width: 200px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-right: 2px solid #444;
-}
-
-#navbar ul {
-    list-style: none;
-    padding: 0;
-}
-
-#navbar ul li {
-    margin: 10px 0;
-}
-
-#navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-#navbar ul li a:hover {
-    background-color: #575757;
-}
-
-/* Body margin to accommodate fixed navbar */
 body {
-    margin-left: 220px;
-}
-
-/* Container and general content styling */
-.container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
 }
 
-/* Notebook buttons styling */
-#notebooks {
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Navigation tabs for notebooks */
+#notebook-tabs {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
-#notebooks button {
-    margin: 5px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+#notebook-tabs button {
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-#notebooks button:hover {
-    background-color: #575757;
+#notebook-tabs button.active {
+    background-color: #0056b3;
+}
+
+#notebook-tabs button:hover {
+    background-color: #0056b3;
 }
 
 /* Glossary content styling */
 #glossary-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 10px;
-    grid-auto-rows: min-content;
 }
 
 .category {
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid #ddd; /* Border around the category box */
-    background-color: #f9f9f9; /* Background color for the category box */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    grid-auto-rows: min-content;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
 .category h2 {
-    background-color: #fff;
-    color: #333;
-    padding: 10px;
     font-size: 1.2em;
-    border-bottom: 2px solid #ddd; /* Divider line under the title */
-    text-align: center; /* Center the title text */
-    margin: 0; /* Remove default margin to prevent overflow issues */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
 }
 
-/* Flexbox styling for entries */
 .entry {
     display: flex;
-    padding: 5px; /* Reduced padding to bring entries closer together */
-    align-items: center;
-    grid-auto-rows: min-content;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 0.95em;
 }
 
-/* Remove the individual lines between entries */
-.entry .word, .entry .definition {
-    width: 50%; /* Adjust the width to ensure alignment */
-    padding: 5px; /* Reduced padding to bring entries closer together */
-}
-
-.entry .word {
+.word {
     font-weight: bold;
-    text-align: right; /* Align the text to the right */
-    border-right: 2px solid #ddd; /* Divider line between word and definition */
+    margin-right: 10px;
 }
 
-.entry .definition {
-    text-align: left; /* Align the text to the left */
+.definition {
+    color: #555;
 }

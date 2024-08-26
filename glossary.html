@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glossary - Spanalyze</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Glossary</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="navbar"></div> <!-- Navbar placeholder -->
-
-    <div class="container">
-        <h1>Glossary</h1>
-        <div id="notebooks"></div> <!-- Notebook buttons will go here -->
-        <div id="glossary-content"></div> <!-- Glossary content will be loaded here -->
+    <!-- Include your existing navbar -->
+    <div id="navbar-container">
+        <!-- This will load navbar.html -->
+        <div w3-include-html="navbar.html"></div>
     </div>
 
-    <script src="js/loadNavbar.js"></script>
-    <script src="js/glossary.js"></script>
+    <main>
+        <h1>Glossary</h1>
+        <nav id="notebook-tabs">
+            <button data-notebook="0">Notebook 1</button>
+            <button data-notebook="1">Notebook 2</button>
+            <!-- Add more buttons for each notebook -->
+        </nav>
+        <section id="glossary-content">
+            <!-- Dynamic content will be inserted here -->
+        </section>
+    </main>
+
+    <script src="glossary.js"></script>
+    <script src="w3.js"></script> <!-- To include external HTML files like navbar.html -->
+    <script>
+        w3.includeHTML(); // This will load the navbar.html content
+    </script>
 </body>
 </html>
