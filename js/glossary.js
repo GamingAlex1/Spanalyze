@@ -23,23 +23,30 @@ document.addEventListener('DOMContentLoaded', function() {
                     categoryTitle.textContent = category;
                     categoryDiv.appendChild(categoryTitle);
 
+                    // Create a fragment to hold the entries
+                    const fragment = document.createDocumentFragment();
+
                     notebook.categories[category].forEach(entry => {
                         const entryDiv = document.createElement('div');
                         entryDiv.classList.add('entry');
-                      
+
                         const wordSpan = document.createElement('span');
                         wordSpan.classList.add('word');
                         wordSpan.textContent = entry.word;
                         entryDiv.appendChild(wordSpan);
-                      
+
                         const definitionSpan = document.createElement('span');
                         definitionSpan.classList.add('definition');
                         definitionSpan.textContent = entry.definition;
                         entryDiv.appendChild(definitionSpan);
-                      
-                        categoryDiv.appendChild(entryDiv);
-                      });
 
+                        fragment.appendChild(entryDiv);
+                    });
+
+                    // Append the fragment to the categoryDiv
+                    categoryDiv.appendChild(fragment);
+
+                    // Append the categoryDiv to the contentContainer
                     contentContainer.appendChild(categoryDiv);
                 });
             }
