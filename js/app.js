@@ -1,11 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    loadComponent('navbar', './components/navbar.html');
-    loadComponent('footer', './components/footer.html');
-});
-
-function loadComponent(elementId, filePath) {
-    fetch(filePath)
+document.addEventListener('DOMContentLoaded', function() {
+    // Load navbar
+    fetch('../components/navbar.html')
         .then(response => response.text())
-        .then(data => document.getElementById(elementId).innerHTML = data)
-        .catch(error => console.error('Error loading component:', error));
-}
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+});
