@@ -103,6 +103,7 @@ body {
 /* Flexbox styling for entries */
 .entry {
     display: flex;
+    flex-direction: column;
     padding: 5px; /* Reduced padding to bring entries closer together */
     align-items: center;
 }
