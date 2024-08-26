@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Load navbar
-    fetch('../components/navbar.html')
+    // Load navbar from components folder
+    fetch('components/navbar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar').innerHTML = data;
