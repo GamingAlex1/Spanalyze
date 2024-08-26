@@ -74,17 +74,17 @@ body {
 
 /* Glossary content styling */
 #glossary-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 10px;
 }
 
 .category {
-    margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid #ddd; /* Border around the category box */
-    max-width: 600px; /* Set a maximum width for the category box */
-    margin-left: auto;
-    margin-right: auto; /* Center the category box horizontally */
+    background-color: #f9f9f9; /* Background color for the category box */
 }
 
 .category h2 {
