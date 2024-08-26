@@ -86,7 +86,6 @@ body {
     border: 2px solid #ddd; /* Border around the category box */
     background-color: #f9f9f9; /* Background color for the category box */
     position: relative;
-    padding: 10px;
 }
 
 .category h2 {
@@ -104,7 +103,6 @@ body {
     display: flex;
     padding: 5px; /* Reduced padding to bring entries closer together */
     align-items: center;
-    border-bottom: 1px solid #ddd; /* Optional: add a border between entries */
 }
 
 /* Remove the individual lines between entries */
@@ -116,7 +114,7 @@ body {
 .entry .word {
     font-weight: bold;
     text-align: right; /* Align the text to the right */
-    border-right: 2px dashed #ddd; /* Dashed line between word and definition */
+    border-right: 2px solid #ddd; /* Divider line between word and definition */
 }
 
 .entry .definition {
@@ -131,8 +129,7 @@ body {
     left: 50%;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent 50%, #ddd 50%, #ddd 50%); /* Dashed line effect */
-    background-size: 4px 8px; /* Adjust size of dashes */
+    background-color: #ddd; /* Color of the middle line */
     transform: translateX(-50%); /* Center the line */
     z-index: 0; /* Ensure the line is behind the content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking */
