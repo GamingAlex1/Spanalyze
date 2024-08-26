@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if the glossary element exists
     const glossaryContainer = document.getElementById('glossary');
     if (glossaryContainer) {
         fetch('data/glossary.json')
