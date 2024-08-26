@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     categoryTitle.textContent = category;
                     categoryDiv.appendChild(categoryTitle);
 
+                    // Create a fragment to hold the entries
+                    const fragment = document.createDocumentFragment();
+
                     notebook.categories[category].forEach(entry => {
                         const entryDiv = document.createElement('div');
                         entryDiv.classList.add('entry');
@@ -37,9 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         definitionSpan.textContent = entry.definition;
                         entryDiv.appendChild(definitionSpan);
 
-                        categoryDiv.appendChild(entryDiv);
+                        fragment.appendChild(entryDiv);
                     });
 
+                    // Append the fragment to the categoryDiv
+                    categoryDiv.appendChild(fragment);
+
+                    // Append the categoryDiv to the contentContainer
                     contentContainer.appendChild(categoryDiv);
                 });
             }
