@@ -26,19 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     notebook.categories[category].forEach(entry => {
                         const entryDiv = document.createElement('div');
                         entryDiv.classList.add('entry');
-
+                      
                         const wordSpan = document.createElement('span');
                         wordSpan.classList.add('word');
                         wordSpan.textContent = entry.word;
                         entryDiv.appendChild(wordSpan);
-
+                      
                         const definitionSpan = document.createElement('span');
                         definitionSpan.classList.add('definition');
                         definitionSpan.textContent = entry.definition;
                         entryDiv.appendChild(definitionSpan);
-
+                      
                         categoryDiv.appendChild(entryDiv);
-                    });
+                      });
 
                     contentContainer.appendChild(categoryDiv);
                 });
