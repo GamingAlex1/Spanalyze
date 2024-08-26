@@ -110,8 +110,7 @@ body {
 .entry .word, .entry .definition {
     width: 100%; /* Ensure the entire width is used for each entry */
     padding: 5px;
-  }
-
+}
   .entry .word {
     font-weight: bold;
     text-align: right;
