@@ -120,17 +120,3 @@ body {
 .entry .definition {
     text-align: left; /* Align the text to the left */
 }
-
-/* Static middle line effect */
-.category:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background-color: #ddd; /* Color of the middle line */
-    transform: translateX(-50%); /* Center the line */
-    z-index: 0; /* Ensure the line is behind the content */
-    pointer-events: none; /* Ensure it doesn't interfere with clicking */
-}
