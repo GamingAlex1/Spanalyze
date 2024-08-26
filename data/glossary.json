@@ -10,9 +10,9 @@
                     {"word": "Buenos noches.", "definition": "Good evening; Good night."}
                 ],
                 "Títulos": [
-                    {"word": "Señor (Sr.); don", "definition": "Mr.; sir"},
-                    {"word": "Señora (Sra.); doña", "definition": "Mrs.; ma'am"},
-                    {"word": "Señorita (Srta.)", "definition": "Miss"}
+                    {"word": "Señor (Sr.); don", "definition": "Mr.; sir."},
+                    {"word": "Señora (Sra.); doña", "definition": "Mrs.; ma'am."},
+                    {"word": "Señorita (Srta.)", "definition": "Miss."}
                 ],
                 "Despedidas": [
                     {"word": "Adiós.", "definition": "Goodbye."},
