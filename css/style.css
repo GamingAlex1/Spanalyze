@@ -82,6 +82,9 @@ body {
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid #ddd; /* Border around the category box */
+    max-width: 600px; /* Set a maximum width for the category box */
+    margin-left: auto;
+    margin-right: auto; /* Center the category box horizontally */
 }
 
 .category h2 {
@@ -93,6 +96,7 @@ body {
 }
 
 .entry {
+    display: flex;
     padding: 10px;
     border-top: 1px solid #ddd; /* Divider line between entries */
 }
@@ -103,16 +107,14 @@ body {
 
 .entry .word {
     font-weight: bold;
-    display: inline-block;
-    width: 45%;
+    flex: 1;
     padding-right: 10px;
-    vertical-align: top;
+    border-right: 2px solid #ddd; /* Divider line between word and definition */
 }
 
 .entry .definition {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
+    flex: 1;
+    padding-left: 10px;
 }
 
 /* Optional: Add some spacing for readability */
