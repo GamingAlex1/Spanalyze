@@ -86,8 +86,6 @@ body {
     border: 2px solid #ddd; /* Border around the category box */
     background-color: #f9f9f9; /* Background color for the category box */
     position: relative;
-    display: flex;
-    flex-direction: column; /* Allow the box to grow with content */
 }
 
 .category h2 {
@@ -98,6 +96,8 @@ body {
     border-bottom: 2px solid #ddd; /* Divider line under the title */
     text-align: center; /* Center the title text */
     margin: 0; /* Remove default margin to prevent overflow issues */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Flexbox styling for entries */
@@ -123,16 +123,3 @@ body {
     text-align: left; /* Align the text to the left */
 }
 
-/* Continuous dashed line in the center */
-.category::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background: #ddd; /* Color of the middle line */
-    transform: translateX(-50%); /* Center the line */
-    z-index: 0; /* Ensure the line is behind the content */
-    pointer-events: none; /* Ensure it doesn't interfere with clicking */
-}
