@@ -51,3 +51,50 @@ body {
 .container {
     padding: 20px;
 }
+
+/* Additional styles for the glossary page */
+#notebooks {
+    margin-bottom: 20px;
+}
+
+#notebooks button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#notebooks button:hover {
+    background-color: #575757;
+}
+
+#glossary-content {
+    padding: 10px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h2 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.entry {
+    margin-bottom: 10px;
+}
+
+.entry .word {
+    font-weight: bold;
+}
+
+.entry .definition {
+    margin-left: 10px;
+    color: #555;
+}

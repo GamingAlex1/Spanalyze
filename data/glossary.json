@@ -1,14 +1,30 @@
-[
-    {
-        "term": "Hola",
-        "definition": "Hello"
-    },
-    {
-        "term": "Amigo",
-        "definition": "Friend"
-    },
-    {
-        "term": "Libro",
-        "definition": "Book"
-    }
-]
+{
+    "notebooks": [
+        {
+            "name": "Notebook 1",
+            "categories": {
+                "Saludos": [
+                    {"word": "Hola", "definition": "Hello"},
+                    {"word": "Buenos días", "definition": "Good morning"}
+                ],
+                "Títulos": [
+                    {"word": "Señor", "definition": "Mr."},
+                    {"word": "Señora", "definition": "Mrs."}
+                ]
+            }
+        },
+        {
+            "name": "Notebook 2",
+            "categories": {
+                "Frases": [
+                    {"word": "Gracias", "definition": "Thank you"},
+                    {"word": "De nada", "definition": "You're welcome"}
+                ],
+                "Colores": [
+                    {"word": "Rojo", "definition": "Red"},
+                    {"word": "Azul", "definition": "Blue"}
+                ]
+            }
+        }
+    ]
+}
