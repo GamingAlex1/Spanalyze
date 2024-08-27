@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div id="quiz-container">
+    <div id="conjugations-container">
         <h2>Spanish Verb Conjugations</h2>
-        <div id="question-container"></div>
-        <button onclick="nextQuestion()">Next</button>
-        <div class="score" id="score-container">Score: 0</div>
+        <div id="question-container" class="conjugation-question"></div>
+        <button class="conjugation-button" onclick="nextQuestion()">Next</button>
+        <div class="conjugation-score" id="score-container">Score: 0</div>
     </div>
 
-    <footer>
-        &copy; 2024 Spanalyze. No rights reserved.
-    </footer>
 
     <script src="../js/conjugations.js"></script>
+    <script src="js/loadNavbar.js"></script>
+    <script src="js/glossary.js"></script>
 </body>
 </html>

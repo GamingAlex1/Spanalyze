@@ -160,40 +160,33 @@ body {
     text-align: left; /* Align the text to the left */
 }
 
-body {
+/* Styles specific to the conjugations page */
+#conjugations-container {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-#quiz-container {
-    max-width: 600px;
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 }
 
-h2 {
+#conjugations-container h2 {
     text-align: center;
 }
 
-.question {
+.conjugation-question {
     margin-bottom: 20px;
 }
 
-.options {
+.conjugation-options {
     list-style: none;
     padding: 0;
 }
 
-.options li {
+.conjugation-options li {
     margin-bottom: 10px;
 }
 
-button {
+.conjugation-button {
     background-color: #007BFF;
     color: white;
     border: none;
@@ -202,16 +195,17 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+.conjugation-button:hover {
     background-color: #0056b3;
 }
 
-.score {
+.conjugation-score {
     text-align: center;
     margin-top: 20px;
 }
 
-footer {
+/* Specific footer styles */
+#conjugations-footer {
     text-align: center;
     margin-top: 40px;
     padding: 10px;
