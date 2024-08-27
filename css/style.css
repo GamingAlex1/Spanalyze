@@ -73,10 +73,7 @@ p {
     bottom: 0;
     width: 100%;
     font-size: 15px;
-}
-
-.content {
-    flex: 1;
+    margin-top: auto;
 }
 
 /* Body margin to accommodate fixed navbar */
