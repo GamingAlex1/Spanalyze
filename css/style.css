@@ -67,6 +67,7 @@ p {
 /* Body margin to accommodate fixed navbar */
 body {
     margin-left: 220px;
+        background-color: #222425;
 }
 
 /* Container and general content styling */
@@ -101,13 +102,14 @@ body {
     gap: 20px;
     padding: 10px;
     grid-auto-rows: min-content;
+    color: white;
 }
 
 .category {
     border-radius: 10px;
     overflow: hidden;
-    border: 2px solid #ddd; /* Border around the category box */
-    background-color: #f9f9f9; /* Background color for the category box */
+    border: 2px solid #484D50; /* Border around the category box */
+    background-color: #25292A; /* Background color for the category box */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -115,8 +117,8 @@ body {
 }
 
 .category h2 {
-    background-color: #fff;
-    color: #333;
+    background-color: #222425;
+    color: white;
     padding: 10px;
     font-size: 1.2em;
     border-bottom: 2px solid #ddd; /* Divider line under the title */
